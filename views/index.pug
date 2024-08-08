@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}, a very basic Express website developed as an exercise for The Odin Project to learn express.
+
+  p The store has the following records counts: 
+
+  ul
+    li #[strong Candies:] !{item_count}
+    li #[strong Categories:] !{category_count}

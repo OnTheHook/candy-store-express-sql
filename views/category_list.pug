@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  if category_list.length
+    each category, index in category_list
+      p
+        a(href=category.url) #{category.name}
+      p #{category.description}
+      if category_list.length - 1 != index 
+        hr
+
+  else
+    p There are no categories.
